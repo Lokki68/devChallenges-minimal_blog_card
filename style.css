@@ -30,7 +30,7 @@ body {
 }
 
 .card_container {
-  width: 50%;
+  width: 350px;
   background: var(--bg-card);
   display: flex;
   flex-direction: column;
