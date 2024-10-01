@@ -1,0 +1,93 @@
+@import url(https://fonts.googleapis.com/css?family=Sora:100,200,300,regular,500,600,700,800);
+
+:root {
+
+  --font-family: 'Sora', sans-serif;
+
+  --bg-main: #FAFAF9;
+  --bg-card: #FFFFFF;
+  --bg-pills: #E6D6FC;
+  --bg-separator: #E5EAF0;
+
+  --color-main: #20293A;
+  --color-secondary: #6C727F;
+  --color-pills: #883AE1;
+}
+
+*, ::before, ::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family : var(--font-family);
+  height: 100vh;
+  background: var(--bg-main);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card_container {
+  width: 50%;
+  background: var(--bg-card);
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+.img_container {
+  width: 100%;
+  
+  margin-bottom: 10px;
+  
+  img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+  }
+}
+
+.pills_container {
+  margin: 15px 0;
+  .pills {
+    width: 90px;
+    height: 25px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--color-pills);
+    font-weight: 600;
+    font-size: 10px;
+    background: var(--bg-pills);
+  }
+}
+
+.card_content {
+  .card_title {
+    font-size: 18px;
+    color: var(--color-main);
+    margin-bottom: 10px;
+  }
+
+  .card_text {
+    font-size: 14px;
+    color: var(--color-secondary);
+  }
+}
+
+.separator {
+  width: 100%;
+  height: 1px;
+  background: var(--bg-separator);
+  margin: 20px 0;
+}
+
+.card_footer {
+  font-size: 12px;
+  color: var(--color-secondary);
+}
